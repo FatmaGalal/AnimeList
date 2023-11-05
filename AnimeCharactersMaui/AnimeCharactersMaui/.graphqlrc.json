@@ -1,0 +1,24 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "AnimeCharactersMaui",
+      "namespace": "AnimeCharactersMaui",
+      "url": "https://graphql.anilist.co/graphql/",
+      "useSingleFile": false,
+      "outputDirectoryName": "Generated",
+      "emitGeneratedCode": false,
+      "records": {
+        "inputs": false,
+        "entities": false
+      },
+      "transportProfiles": [
+        {
+          "default": "Http",
+          "subscription": "WebSocket"
+        }
+      ]
+    }
+  }
+}

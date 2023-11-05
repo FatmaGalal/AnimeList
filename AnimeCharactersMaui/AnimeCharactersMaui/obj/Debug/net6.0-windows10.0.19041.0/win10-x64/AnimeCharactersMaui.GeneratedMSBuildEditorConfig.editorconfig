@@ -1,0 +1,71 @@
+is_global = true
+build_property.StrawberryShake_DefaultNamespace = AnimeCharactersMaui
+build_property.StrawberryShake_LogFile = 
+build_property.StrawberryShake_BuildDirectory = C:\Users\Fatma.Galal\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.21.0\build\..\analyzers\dotnet\cs
+build_property.StrawberryShake_PersistedQueryDirectory = 
+build_property.StrawberryShake_State = obj\\berry
+build_property.StrawberryShake_EmitGeneratedCode = 
+build_property.TargetFramework = net6.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AnimeCharactersMaui
+build_property.ProjectDir = D:\GraphQlDemos\AnimeListRepo\AnimeCharactersMaui\AnimeCharactersMaui\
+
+[D:/GraphQlDemos/AnimeListRepo/AnimeCharactersMaui/AnimeCharactersMaui/GetAnimeList.graphql]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.GraphQL = true
+build_metadata.AdditionalFiles.GraphQL = true
+build_metadata.AdditionalFiles.GraphQLConfig = 
+build_metadata.AdditionalFiles.GraphQLConfig = 
+
+[D:/GraphQlDemos/AnimeListRepo/AnimeCharactersMaui/AnimeCharactersMaui/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeCharactersMaui.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+build_metadata.AdditionalFiles.GraphQL = 
+build_metadata.AdditionalFiles.GraphQLConfig = 
+
+[D:/GraphQlDemos/AnimeListRepo/AnimeCharactersMaui/AnimeCharactersMaui/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeCharactersMaui.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.GraphQL = 
+build_metadata.AdditionalFiles.GraphQLConfig = 
+
+[D:/GraphQlDemos/AnimeListRepo/AnimeCharactersMaui/AnimeCharactersMaui/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeCharactersMaui.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.GraphQL = 
+build_metadata.AdditionalFiles.GraphQLConfig = 
+
+[D:/GraphQlDemos/AnimeListRepo/AnimeCharactersMaui/AnimeCharactersMaui/Views/CustomNavigationBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeCharactersMaui.Views.CustomNavigationBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CustomNavigationBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CustomNavigationBar.xaml
+build_metadata.AdditionalFiles.GraphQL = 
+build_metadata.AdditionalFiles.GraphQLConfig = 
+
+[D:/GraphQlDemos/AnimeListRepo/AnimeCharactersMaui/AnimeCharactersMaui/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeCharactersMaui.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.GraphQL = 
+build_metadata.AdditionalFiles.GraphQLConfig = 

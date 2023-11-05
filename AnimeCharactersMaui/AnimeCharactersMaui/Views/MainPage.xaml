@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             xmlns:views=" clr-namespace:AnimeCharactersMaui.Views"
+             x:Class="AnimeCharactersMaui.Views.MainPage">
+
+  <Grid >
+
+
+    <!--<views:CustomNavigationBar Title="{Binding Title}"
+                               BackCommand="{Binding BackCommand}"
+                               Grid.Row="0" />-->
+    <!--<RefreshView  
+                  IsRefreshing="{Binding IsRefresh}"
+                  Command="{Binding RefreshCommand}">-->
+
+    <CollectionView ItemsSource="{Binding AnimeCharactersList}"
+                    IsEnabled="True"
+                    Grid.Row="0"
+                    VerticalOptions="FillAndExpand"
+                    RemainingItemsThreshold="1"
+                    VerticalScrollBarVisibility="Always"
+                    RemainingItemsThresholdReachedCommand="{Binding LoadMoreItemsCommand}"
+                    SelectionMode="Single">
+
+      <CollectionView.ItemTemplate>
+        <DataTemplate>
+          <Grid Margin="6,6"
+                BackgroundColor="Transparent">
+            <Rectangle HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"
+                       Fill="#F8FCFE"
+                       Stroke="#6792B0"
+                       StrokeThickness="1"
+                       RadiusX="8"
+                       RadiusY="8">
+              <Rectangle.Shadow>
+                <Shadow Brush="#DFDFDF"
+                        Offset="1,1"
+                        Opacity="0.4" />
+              </Rectangle.Shadow>
+            </Rectangle>
+            <HorizontalStackLayout>
+              <Image Source="{Binding Image.Medium}"
+                     HeightRequest="100"
+                     WidthRequest="100"
+                     Aspect="AspectFill" />
+
+              <Label FontSize="Large"
+                     Margin="6,6"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     TextColor="#4E7692">
+
+                <Label.FormattedText>
+                  <FormattedString>
+                    <Span Text="{Binding Name.First}" />
+                    <Span Text=" " />
+                    <Span Text="{Binding Name.Last}" />
+                  </FormattedString>
+                </Label.FormattedText>
+              </Label>
+            </HorizontalStackLayout>
+
+
+          </Grid>
+
+        </DataTemplate>
+      </CollectionView.ItemTemplate>
+      <CollectionView.Footer>
+        <ActivityIndicator IsVisible="True"
+                           IsRunning="True"
+                           HeightRequest="40"
+                           WidthRequest="40"
+                           HorizontalOptions="Center"
+                           Color="#6792B0" />
+      </CollectionView.Footer>
+    </CollectionView>
+    <!--</RefreshView>-->
+  </Grid>
+
+</ContentPage>

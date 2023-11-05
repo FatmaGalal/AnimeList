@@ -1,0 +1,504 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnimeCharactersMaui</name>
+    </assembly>
+    <members>
+        <member name="T:AnimeCharactersMaui.AnimeCharactersMaui">
+            <summary>
+            Represents the AnimeCharactersMaui GraphQL client
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.GetAnimeListQuery">
+            <summary>
+            Represents the operation service of the GetAnimeList GraphQL operation
+            <code>
+            query GetAnimeList($perPage: Int, $page: Int) {
+              Page(perPage: $perPage, page: $page) {
+                __typename
+                pageInfo {
+                  __typename
+                  total
+                  perPage
+                  currentPage
+                  lastPage
+                  hasNextPage
+                }
+                characters {
+                  __typename
+                  name {
+                    __typename
+                    first
+                    last
+                    native
+                    alternative
+                    alternativeSpoiler
+                    userPreferred
+                  }
+                  image {
+                    __typename
+                    large
+                    medium
+                  }
+                  gender
+                  dateOfBirth {
+                    __typename
+                    year
+                    month
+                    day
+                  }
+                  ... on Character {
+                    id
+                  }
+                }
+              }
+            }
+            </code>
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.GetAnimeListQueryDocument">
+            <summary>
+            Represents the operation service of the GetAnimeList GraphQL operation
+            <code>
+            query GetAnimeList($perPage: Int, $page: Int) {
+              Page(perPage: $perPage, page: $page) {
+                __typename
+                pageInfo {
+                  __typename
+                  total
+                  perPage
+                  currentPage
+                  lastPage
+                  hasNextPage
+                }
+                characters {
+                  __typename
+                  name {
+                    __typename
+                    first
+                    last
+                    native
+                    alternative
+                    alternativeSpoiler
+                    userPreferred
+                  }
+                  image {
+                    __typename
+                    large
+                    medium
+                  }
+                  gender
+                  dateOfBirth {
+                    __typename
+                    year
+                    month
+                    day
+                  }
+                  ... on Character {
+                    id
+                  }
+                }
+              }
+            }
+            </code>
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.GetAnimeList_Page_Characters_Character">
+            <summary>
+            A character that features in an anime or manga
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Character.Name">
+            <summary>
+            The names of the character
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Character.Image">
+            <summary>
+            Character images
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Character.Gender">
+            <summary>
+            The character's gender. Usually Male, Female, or Non-binary but can be any string.
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Character.DateOfBirth">
+            <summary>
+            The character's birth date
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.GetAnimeList_Page_Characters_DateOfBirth_FuzzyDate">
+            <summary>
+            Date object that allows for incomplete date values (fuzzy)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_DateOfBirth_FuzzyDate.Year">
+            <summary>
+            Numeric Year (2017)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_DateOfBirth_FuzzyDate.Month">
+            <summary>
+            Numeric Month (3)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_DateOfBirth_FuzzyDate.Day">
+            <summary>
+            Numeric Day (24)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Image_CharacterImage.Large">
+            <summary>
+            The character's image of media at its largest size
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Image_CharacterImage.Medium">
+            <summary>
+            The character's image of media at medium size
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName">
+            <summary>
+            The names of the character
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName.First">
+            <summary>
+            The character's given name
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName.Last">
+            <summary>
+            The character's surname
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName.Native">
+            <summary>
+            The character's full name in their native language
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName.Alternative">
+            <summary>
+            Other names the character might be referred to as
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName.AlternativeSpoiler">
+            <summary>
+            Other names the character might be referred to as but are spoilers
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Characters_Name_CharacterName.UserPreferred">
+            <summary>
+            The currently authenticated users preferred name language. Default romaji for non-authenticated
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.GetAnimeList_Page_Page">
+            <summary>
+            Page of data
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_Page.PageInfo">
+            <summary>
+            The pagination information
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_PageInfo_PageInfo.Total">
+            <summary>
+            The total number of items. Note: This value is not guaranteed to be accurate, do not rely on this for logic
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_PageInfo_PageInfo.PerPage">
+            <summary>
+            The count on a page
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_PageInfo_PageInfo.CurrentPage">
+            <summary>
+            The current page
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_PageInfo_PageInfo.LastPage">
+            <summary>
+            The last page
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.GetAnimeList_Page_PageInfo_PageInfo.HasNextPage">
+            <summary>
+            If there is another page
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IAnimeCharactersMaui">
+            <summary>
+            Represents the AnimeCharactersMaui GraphQL client
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeListQuery">
+            <summary>
+            Represents the operation service of the GetAnimeList GraphQL operation
+            <code>
+            query GetAnimeList($perPage: Int, $page: Int) {
+              Page(perPage: $perPage, page: $page) {
+                __typename
+                pageInfo {
+                  __typename
+                  total
+                  perPage
+                  currentPage
+                  lastPage
+                  hasNextPage
+                }
+                characters {
+                  __typename
+                  name {
+                    __typename
+                    first
+                    last
+                    native
+                    alternative
+                    alternativeSpoiler
+                    userPreferred
+                  }
+                  image {
+                    __typename
+                    large
+                    medium
+                  }
+                  gender
+                  dateOfBirth {
+                    __typename
+                    year
+                    month
+                    day
+                  }
+                  ... on Character {
+                    id
+                  }
+                }
+              }
+            }
+            </code>
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page">
+            <summary>
+            Page of data
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page.PageInfo">
+            <summary>
+            The pagination information
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Characters">
+            <summary>
+            A character that features in an anime or manga
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters.Name">
+            <summary>
+            The names of the character
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters.Image">
+            <summary>
+            Character images
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters.Gender">
+            <summary>
+            The character's gender. Usually Male, Female, or Non-binary but can be any string.
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters.DateOfBirth">
+            <summary>
+            The character's birth date
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Character">
+            <summary>
+            A character that features in an anime or manga
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Characters_DateOfBirth">
+            <summary>
+            Date object that allows for incomplete date values (fuzzy)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_DateOfBirth.Year">
+            <summary>
+            Numeric Year (2017)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_DateOfBirth.Month">
+            <summary>
+            Numeric Month (3)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_DateOfBirth.Day">
+            <summary>
+            Numeric Day (24)
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Characters_DateOfBirth_FuzzyDate">
+            <summary>
+            Date object that allows for incomplete date values (fuzzy)
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Image.Large">
+            <summary>
+            The character's image of media at its largest size
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Image.Medium">
+            <summary>
+            The character's image of media at medium size
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name">
+            <summary>
+            The names of the character
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name.First">
+            <summary>
+            The character's given name
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name.Last">
+            <summary>
+            The character's surname
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name.Native">
+            <summary>
+            The character's full name in their native language
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name.Alternative">
+            <summary>
+            Other names the character might be referred to as
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name.AlternativeSpoiler">
+            <summary>
+            Other names the character might be referred to as but are spoilers
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name.UserPreferred">
+            <summary>
+            The currently authenticated users preferred name language. Default romaji for non-authenticated
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Characters_Name_CharacterName">
+            <summary>
+            The names of the character
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.IGetAnimeList_Page_Page">
+            <summary>
+            Page of data
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_PageInfo.Total">
+            <summary>
+            The total number of items. Note: This value is not guaranteed to be accurate, do not rely on this for logic
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_PageInfo.PerPage">
+            <summary>
+            The count on a page
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_PageInfo.CurrentPage">
+            <summary>
+            The current page
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_PageInfo.LastPage">
+            <summary>
+            The last page
+            </summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.IGetAnimeList_Page_PageInfo.HasNextPage">
+            <summary>
+            If there is another page
+            </summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.State.CharacterEntity">
+            <summary>A character that features in an anime or manga</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterEntity.Name">
+            <summary>The names of the character</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterEntity.Image">
+            <summary>Character images</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterEntity.Gender">
+            <summary>The character's gender. Usually Male, Female, or Non-binary but can be any string.</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterEntity.DateOfBirth">
+            <summary>The character's birth date</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterImageData.Large">
+            <summary>The character's image of media at its largest size</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterImageData.Medium">
+            <summary>The character's image of media at medium size</summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.State.CharacterNameData">
+            <summary>The names of the character</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterNameData.First">
+            <summary>The character's given name</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterNameData.Last">
+            <summary>The character's surname</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterNameData.Native">
+            <summary>The character's full name in their native language</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterNameData.Alternative">
+            <summary>Other names the character might be referred to as</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterNameData.AlternativeSpoiler">
+            <summary>Other names the character might be referred to as but are spoilers</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.CharacterNameData.UserPreferred">
+            <summary>The currently authenticated users preferred name language. Default romaji for non-authenticated</summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.State.FuzzyDateData">
+            <summary>Date object that allows for incomplete date values (fuzzy)</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.FuzzyDateData.Year">
+            <summary>Numeric Year (2017)</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.FuzzyDateData.Month">
+            <summary>Numeric Month (3)</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.FuzzyDateData.Day">
+            <summary>Numeric Day (24)</summary>
+        </member>
+        <member name="T:AnimeCharactersMaui.State.PageData">
+            <summary>Page of data</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.PageData.PageInfo">
+            <summary>The pagination information</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.PageInfoData.Total">
+            <summary>The total number of items. Note: This value is not guaranteed to be accurate, do not rely on this for logic</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.PageInfoData.PerPage">
+            <summary>The count on a page</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.PageInfoData.CurrentPage">
+            <summary>The current page</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.PageInfoData.LastPage">
+            <summary>The last page</summary>
+        </member>
+        <member name="P:AnimeCharactersMaui.State.PageInfoData.HasNextPage">
+            <summary>If there is another page</summary>
+        </member>
+    </members>
+</doc>

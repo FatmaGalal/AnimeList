@@ -1,0 +1,32 @@
+﻿query GetAnimeList($perPage: Int, $page: Int){
+    Page(perPage: $perPage, page:$page) {
+        pageInfo {
+            total
+            perPage
+            currentPage
+            lastPage
+            hasNextPage
+        }
+        characters {
+            name {
+                first
+                last
+                native
+                alternative
+                alternativeSpoiler
+                userPreferred
+            }
+            image {
+                large
+                medium
+            }
+            gender
+            dateOfBirth {
+                year
+                month
+                day
+            }
+        }
+    }
+}
+
